@@ -1,0 +1,319 @@
+input,
+select,
+textarea {
+  font-family: "Microsoft YaHei";
+  border: 0;
+  text-indent: 1em;
+}
+
+input[type="submit"] {
+  text-indent: 0;
+  cursor: pointer;
+}
+
+input[type="text"],
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+input[type="text"]::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: #999999;
+  font-size: inherit;
+}
+input[type="text"]:-moz-placeholder,
+select:-moz-placeholder {
+  color: #999999;
+  font-size: inherit;
+}
+input[type="text"]::-moz-placeholder,
+select::-moz-placeholder {
+  color: #999999;
+  font-size: inherit;
+}
+input[type="text"]:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  color: #999999;
+  font-size: inherit;
+}
+
+.head, .head .nav ul, .intro ul, .lesson ul {
+  zoom: 1;
+}
+.head:after, .head .nav ul:after, .intro ul:after, .lesson ul:after {
+  clear: both;
+}
+.head:before, .head .nav ul:before, .intro ul:before, .lesson ul:before, .head:after, .head .nav ul:after, .intro ul:after, .lesson ul:after {
+  content: "";
+  display: table;
+}
+
+.title .t-l,
+.title .t-r, .lesson ul .l-head .hover .btn {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.head {
+  height: 100px;
+}
+.head .logo {
+  float: left;
+  padding-top: 23px;
+}
+.head .nav {
+  float: right;
+}
+.head .nav ul li {
+  float: left;
+  padding-top: 42px;
+  margin-left: 30px;
+  line-height: 22px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.head .nav ul li:hover {
+  font-weight: bold;
+  color: #c1182e;
+  border-bottom: 2px solid #c1182e;
+}
+
+.a-c {
+  color: #c1182e;
+}
+
+.banner {
+  height: 450px;
+  background: url(../images/banner.png) no-repeat center;
+}
+.banner .wrap {
+  position: relative;
+  height: 100%;
+}
+.banner .sign-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  padding: 30px 30px 10px;
+  width: 280px;
+  height: 350px;
+  background-color: #ffffff;
+}
+.banner .sign-in .b-title,
+.banner .sign-in .b-subtitle {
+  text-align: center;
+}
+.banner .sign-in .b-title {
+  line-height: 28px;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.banner .sign-in .b-subtitle {
+  line-height: 22px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #666666;
+}
+.banner .sign-in input {
+  width: 100%;
+  height: 42px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background-color: #fafafa;
+  border: solid 1px #eeeeee;
+}
+.banner .sign-in input[type="submit"] {
+  background-color: #c1182e;
+  color: #fff;
+  font-size: 16px;
+}
+
+.title {
+  line-height: 40px;
+  padding-bottom: 22px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  background: url(../images/t-b.png) no-repeat bottom center;
+}
+.title .t-l,
+.title .t-r {
+  width: 38px;
+  height: 37px;
+}
+.title .t-l {
+  background: url(../images/t-l.png) no-repeat;
+}
+.title .t-r {
+  background: url(../images/t-r.png) no-repeat;
+}
+.title .t-l,
+.title .t-r .text {
+  vertical-align: middle;
+}
+
+.intro {
+  padding: 80px 0;
+}
+.intro ul {
+  padding-top: 26px;
+}
+.intro li {
+  float: left;
+  margin: 0 30px;
+  text-align: center;
+}
+.intro .i-subject {
+  width: 169px;
+  height: 166px;
+  line-height: 166px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  background: url(../images/i-bg.png) no-repeat;
+}
+.intro .i-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #666666;
+}
+
+.taste {
+  padding: 30px 0;
+  background: url(../images/bg_1.png) no-repeat center;
+}
+.taste .title {
+  line-height: 26px;
+  padding-bottom: 0;
+  margin-bottom: 24px;
+  font-size: 26px;
+  color: #fff;
+  background: no-repeat;
+}
+.taste .title .t-l,
+.taste .title .t-r {
+  width: 27px;
+  height: 26px;
+}
+.taste .title .t-l {
+  background: url(../images/t-l_2.png) no-repeat;
+}
+.taste .title .t-r {
+  background: url(../images/t-r_2.png) no-repeat;
+}
+.taste .sign-in {
+  margin-bottom: 20px;
+}
+.taste .sign-in input {
+  width: 280px;
+  height: 44px;
+  margin: 0 10px;
+  font-size: 14px;
+  background-color: #fafafa;
+}
+.taste .sign-in input[type="submit"] {
+  width: 230px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #c1182e;
+}
+.taste .hint {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.subtitle {
+  padding-top: 14px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #666666;
+}
+
+.lesson {
+  padding: 80px 0 50px;
+}
+.lesson ul {
+  padding-top: 30px;
+  margin-right: -20px;
+}
+.lesson ul li {
+  float: left;
+  width: 386px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.lesson ul .l-head {
+  position: relative;
+  height: 258px;
+}
+.lesson ul .l-head .hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url(../images/clear.png);
+  text-align: center;
+}
+.lesson ul .l-head .hover .btn {
+  padding: 0 15px;
+  margin-top: 109px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background-color: #c1182e;
+  color: #fff;
+}
+.lesson ul .l-head:hover .hover {
+  display: block;
+}
+.lesson ul .l-name {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 46px;
+}
+.lesson ul p {
+  margin-bottom: 16px;
+  line-height: 21px;
+  font-size: 14px;
+  color: #666666;
+}
+.lesson ul .l-student {
+  padding-left: 29px;
+  line-height: 34px;
+  font-size: 14px;
+  background: url(../images/icon_1.png) no-repeat left;
+}
+.lesson ul .l-student .strong {
+  font-weight: bold;
+}
+.lesson ul .l-student .btn {
+  float: right;
+  width: 88px;
+  height: 34px;
+  background: url(../images/btn.png);
+  text-align: center;
+  color: #fff;
+}
+
+.story {
+  height: 1306px;
+  background: url(../images/bg_2.png) no-repeat;
+}
+
+/*# sourceMappingURL=index.css.map */

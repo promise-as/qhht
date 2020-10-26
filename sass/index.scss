@@ -1,0 +1,312 @@
+input,
+select,
+textarea {
+  font-family: "Microsoft YaHei";
+  border: 0;
+  text-indent: 1em;
+}
+input[type="submit"] {
+  text-indent: 0;
+  cursor: pointer;
+}
+input[type="text"],
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  &::-webkit-input-placeholder {
+    color: #999999;
+    font-size: inherit;
+  }
+  &:-moz-placeholder {
+    color: #999999;
+    font-size: inherit;
+  }
+  &::-moz-placeholder {
+    color: #999999;
+    font-size: inherit;
+  }
+  &:-ms-input-placeholder {
+    color: #999999;
+    font-size: inherit;
+  }
+}
+%clearfix {
+  zoom: 1;
+  &:after {
+    clear: both;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+}
+%in-b {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+$active-color: #c1182e;
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.head {
+  @extend %clearfix;
+  height: 100px;
+  .logo {
+    float: left;
+    padding-top: 23px;
+  }
+  .nav {
+    float: right;
+    ul {
+      @extend %clearfix;
+      li {
+        float: left;
+        padding-top: 42px;
+        margin-left: 30px;
+        line-height: 22px;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+          font-weight: bold;
+          color: $active-color;
+          border-bottom: 2px solid $active-color;
+        }
+      }
+    }
+  }
+}
+.a-c {
+  color: $active-color;
+}
+.banner {
+  height: 450px;
+  background: url(../images/banner.png) no-repeat center;
+  .wrap {
+    position: relative;
+    height: 100%;
+  }
+  .sign-in {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 30px 30px 10px;
+    width: 280px;
+    height: 350px;
+    background-color: #ffffff;
+    .b-title,
+    .b-subtitle {
+      text-align: center;
+    }
+    .b-title {
+      line-height: 28px;
+      margin-bottom: 10px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .b-subtitle {
+      line-height: 22px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: #666666;
+    }
+    input {
+      width: 100%;
+      height: 42px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      background-color: #fafafa;
+      border: solid 1px #eeeeee;
+    }
+    input[type="submit"] {
+      background-color: $active-color;
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+}
+.title {
+  line-height: 40px;
+  padding-bottom: 22px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  background: url(../images/t-b.png) no-repeat bottom center;
+  .t-l,
+  .t-r {
+    @extend %in-b;
+    width: 38px;
+    height: 37px;
+  }
+  .t-l {
+    background: url(../images/t-l.png) no-repeat;
+  }
+  .t-r {
+    background: url(../images/t-r.png) no-repeat;
+  }
+  .t-l,
+  .t-r .text {
+    vertical-align: middle;
+  }
+}
+.intro {
+  padding: 80px 0;
+  ul {
+    @extend %clearfix;
+    padding-top: 26px;
+  }
+  li {
+    float: left;
+    margin: 0 30px;
+    text-align: center;
+  }
+  .i-subject {
+    width: 169px;
+    height: 166px;
+    line-height: 166px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    background: url(../images/i-bg.png) no-repeat;
+  }
+  .i-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #666666;
+  }
+}
+.taste {
+  padding: 30px 0;
+  background: url(../images/bg_1.png) no-repeat center;
+  .title {
+    line-height: 26px;
+    padding-bottom: 0;
+    margin-bottom: 24px;
+    font-size: 26px;
+    color: #fff;
+    background: no-repeat;
+    .t-l,
+    .t-r {
+      width: 27px;
+      height: 26px;
+    }
+    .t-l {
+      background: url(../images/t-l_2.png) no-repeat;
+    }
+    .t-r {
+      background: url(../images/t-r_2.png) no-repeat;
+    }
+  }
+  .sign-in {
+    margin-bottom: 20px;
+    input {
+      width: 280px;
+      height: 44px;
+      margin: 0 10px;
+      font-size: 14px;
+
+      background-color: #fafafa;
+    }
+    input[type="submit"] {
+      width: 230px;
+      color: #fff;
+      font-size: 16px;
+      background-color: $active-color;
+    }
+  }
+  .hint {
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+  }
+}
+.subtitle {
+  padding-top: 14px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #666666;
+}
+.lesson {
+  padding: 80px 0 50px;
+  ul {
+    @extend %clearfix;
+    padding-top: 30px;
+    margin-right: -20px;
+    li {
+      float: left;
+      width: 386px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+    }
+    .l-head {
+      position: relative;
+      height: 258px;
+      .hover {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: url(../images/clear.png);
+        text-align: center;
+        .btn {
+          @extend %in-b;
+          padding: 0 15px;
+          margin-top: 109px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 16px;
+          background-color: $active-color;
+          color: #fff;
+        }
+      }
+      &:hover {
+        .hover {
+          display: block;
+        }
+      }
+    }
+    .l-name {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 46px;
+    }
+    p {
+      margin-bottom: 16px;
+      line-height: 21px;
+      font-size: 14px;
+      color: #666666;
+    }
+    .l-student {
+      padding-left: 29px;
+      line-height: 34px;
+      font-size: 14px;
+      background: url(../images/icon_1.png) no-repeat left;
+      .strong {
+        font-weight: bold;
+      }
+      .btn {
+        float: right;
+        width: 88px;
+        height: 34px;
+        
+        background: url(../images/btn.png);
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+}
+.story{
+  height: 1306px;
+  background: url(../images/bg_2.png) no-repeat;
+}
