@@ -40,7 +40,7 @@ $(function () {
 
   // 弹窗显示的次数
   if ($('.dialog').size() > 0) {
-    midtc('.dialog', '.close', 6000, 30000, 2);
+    midtc('.dialog', '.close', 10000, 30000, 2);
   }
   function midtc(ele, c, f, a, n) {
     var $par = $(ele);
