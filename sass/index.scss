@@ -284,8 +284,7 @@ a {
   color: #666666;
 }
 .lesson {
-  // display: none;
-  padding: 80px 0 50px;
+  padding: 0 0 50px;
   background: url(../images/bg_3.png) no-repeat center top;
   ul {
     @extend %clearfix;
@@ -634,7 +633,15 @@ a {
     }
   }
 }
+.bottom-site{
+  width: 100%;
+  height: 120px;
+}
 .bottom {
+  position: fixed;
+  z-index: 400;
+  bottom: 0;
+  width: 100%;
   height: 194px;
   margin-top: -74px;
   background: url(../images/bottom.png) no-repeat center;
@@ -676,7 +683,7 @@ a {
 }
 .right-nav {
   position: fixed;
-  right: 8%;
+  right: 10%;
   top: 20%;
   width: 135px;
   height: 557px;
@@ -725,7 +732,22 @@ a {
   .hint {
     color: #ffffff;
   }
+  .close{
+    @extend %in-b;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    margin-top: 6px;
+    background: url(https://img.thea.cn/public/platform/thea/202006/hbj/jz-mk/images/close_14x14.png);
+  }
 }
+// 要适应 1366 x 768
+@media screen and (max-width: 1440px) {
+  .right-nav {
+    right: 0;
+  }
+}
+
 .dialog {
   display: none;
   width: 100%;

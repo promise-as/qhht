@@ -51,7 +51,7 @@ select:-ms-input-placeholder {
 
 .a-point::before, .story .s-cont .i-title::before, .campus ul li::before, .red-title .t-l,
 .red-title .t-r, .red-title .text, .white-title::after, .white-title .t-l,
-.white-title .t-r, .white-title .text, .lesson ul .l-head .hover .btn, .team .t-cont .hd ul, .right-nav .tel .icon, .dialog .d-subtitle, .dialog .item .i-key, .dialog .item span {
+.white-title .t-r, .white-title .text, .lesson ul .l-head .hover .btn, .team .t-cont .hd ul, .right-nav .tel .icon, .right-nav .close, .dialog .d-subtitle, .dialog .item .i-key, .dialog .item span {
   display: inline-block;
   *zoom: 1;
   *display: inline;
@@ -285,7 +285,7 @@ a:hover {
 }
 
 .lesson {
-  padding: 80px 0 50px;
+  padding: 0 0 50px;
   background: url(../images/bg_3.png) no-repeat center top;
 }
 .lesson ul {
@@ -604,7 +604,16 @@ a:hover {
   color: #999;
 }
 
+.bottom-site {
+  width: 100%;
+  height: 120px;
+}
+
 .bottom {
+  position: fixed;
+  z-index: 400;
+  bottom: 0;
+  width: 100%;
   height: 194px;
   margin-top: -74px;
   background: url(../images/bottom.png) no-repeat center;
@@ -646,7 +655,7 @@ a:hover {
 
 .right-nav {
   position: fixed;
-  right: 8%;
+  right: 10%;
   top: 20%;
   width: 135px;
   height: 557px;
@@ -693,7 +702,19 @@ a:hover {
 .right-nav .hint {
   color: #ffffff;
 }
+.right-nav .close {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  margin-top: 6px;
+  background: url(https://img.thea.cn/public/platform/thea/202006/hbj/jz-mk/images/close_14x14.png);
+}
 
+@media screen and (max-width: 1440px) {
+  .right-nav {
+    right: 0;
+  }
+}
 .dialog {
   display: none;
   width: 100%;

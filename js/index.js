@@ -29,14 +29,18 @@ $(function () {
   });
 
   // 关闭底部
-  closeArea('.bottom', '.bottom .close');
+  closeArea('.bottom', '.bottom .close', '.bottom-site');
   // 关闭弹窗
-  closeArea('.dialog', '.dialog .close');
-  function closeArea(box, btn){
+  closeArea('.dialog', '.dialog .close', null);
+  // 关闭右侧导航
+  closeArea('.right-nav', '.right-nav .close', null);
+  function closeArea(box, btn, site){
     $(btn).click(function(){
       $(box).hide();
+      $(site).hide();
     });
   }
+  
 
   // 弹窗显示的次数
   if ($('.dialog').size() > 0) {
